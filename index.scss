@@ -1,0 +1,102 @@
+$color1: #300049;
+$color2: #4a0072;
+$color3: #a71797;
+$color4: #E8BFFB;
+$color5: #5b084c;
+$backcolorCard: rgb(206, 189, 205);
+
+$backgroundcolor:#D099E2;
+$button1: #00838f;
+$button2: #00695c;
+
+
+@mixin unique-gradient($color3, $color5, $direction: 360deg) { //is a metaliic 
+    background: linear-gradient(
+        $direction,
+        $color3 0%,
+        $color5 25%,
+        $color3 50%,
+        $color5 75%,
+        $color3 100%,
+        );
+    }
+    
+    .bodycolor {
+         @include unique-gradient($color3, $color5, $direction: 360deg );
+    }
+    .main_title {
+        font-size: 50px;
+        color: $color4;
+    }
+    // maybe put in different .scss "_form container"
+   .User_income-container {
+    font-size: 25px;
+    border: white solid 10px;
+    border-radius: 23px;
+    padding: 20px 20px;
+    background-color: $color4;
+    margin: 10px;
+ #UserInputDescription {
+    padding: 10px;
+    font-size: 20px;
+ }
+ #UserInputAmount {
+    padding: 10px;
+    font-size: 20px;
+ }
+//  select dropdown
+ #income-select-description {
+padding: 15px;
+font-size: 15px;
+color: $color4;
+background-color: $color3;
+ }
+//  expense container
+   }
+    .User_expenses-container {
+    border: white solid 10px;
+    border-radius: 23px;
+    padding: 20px 20px;
+    background-color: $color4;
+    margin: 10px;
+    #income-user-details {
+    padding: 10px;
+    font-size: 20px;
+    }
+    #income-amount-details {
+    padding: 10px;
+    font-size: 20px;
+    }
+    #select-description {
+    padding: 15px;
+    font-size: 15px;
+    color: $color4;
+    background-color: $color3;
+    }
+    #userInputExpense {
+    // padding: 10px;
+    font-size: 25px;
+    }
+    }
+    // end of form container
+
+    // total budget sectiion
+    .TotalBudget-Summary {
+        border: white solid 10px ;
+        border-radius: 23px;
+        padding: 20px 20px ;
+        background-color: $color4;
+    }
+    // end total budget sectioin
+
+    // chart area
+    .chart-area {
+        border: white solid 10px;
+        border-radius: 23px;
+        padding: 20px 20px;
+        background-color: $color4;
+
+    }
+    
+
+   

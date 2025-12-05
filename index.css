@@ -1,0 +1,70 @@
+.bodycolor {
+  background: linear-gradient(360deg, #a71797 0%, #5b084c 25%, #a71797 50%, #5b084c 75%, #a71797 100%);
+}
+
+.main_title {
+  font-size: 50px;
+  color: #E8BFFB;
+}
+
+.User_income-container {
+  font-size: 25px;
+  border: white solid 10px;
+  border-radius: 23px;
+  padding: 20px 20px;
+  background-color: #E8BFFB;
+  margin: 10px;
+}
+.User_income-container #UserInputDescription {
+  padding: 10px;
+  font-size: 20px;
+}
+.User_income-container #UserInputAmount {
+  padding: 10px;
+  font-size: 20px;
+}
+.User_income-container #income-select-description {
+  padding: 15px;
+  font-size: 15px;
+  color: #E8BFFB;
+  background-color: #a71797;
+}
+
+.User_expenses-container {
+  border: white solid 10px;
+  border-radius: 23px;
+  padding: 20px 20px;
+  background-color: #E8BFFB;
+  margin: 10px;
+}
+.User_expenses-container #income-user-details {
+  padding: 10px;
+  font-size: 20px;
+}
+.User_expenses-container #income-amount-details {
+  padding: 10px;
+  font-size: 20px;
+}
+.User_expenses-container #select-description {
+  padding: 15px;
+  font-size: 15px;
+  color: #E8BFFB;
+  background-color: #a71797;
+}
+.User_expenses-container #userInputExpense {
+  font-size: 25px;
+}
+
+.TotalBudget-Summary {
+  border: white solid 10px;
+  border-radius: 23px;
+  padding: 20px 20px;
+  background-color: #E8BFFB;
+}
+
+.chart-area {
+  border: white solid 10px;
+  border-radius: 23px;
+  padding: 20px 20px;
+  background-color: #E8BFFB;
+}/*# sourceMappingURL=index.css.map */

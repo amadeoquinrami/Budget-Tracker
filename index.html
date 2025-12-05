@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css.map"> <!--idk why but before it was "ank" changed to "link"-->
+    <title>Budget Tracker</title>
+</head>
+<!-- // PSudeo code  -->
+<!-- // 1. i need input fields for the user to input income and expenses -->
+<!-- // 2 add buttons to add income and expenses. -->
+<!-- // 3 need to display total budget , income, and expenses -->
+<!-- //  for userinterface -->
+<body class="bodycolor">
+    <header>
+        <h1 class="main_title">Budget tracker</h1>
+        
+    </header>
+    <main class="Main_Budget-container">
+
+        <div class="budget-income-section">
+
+            <form class="User_income-container">Income <br>
+                <input placeholder="Description" id="UserInputDescription" required></input>
+                <input placeholder="Amount" type="number" id="UserInputAmount" required></input>
+             <div class="DropDown-btn-container">
+                <label class="incomeBtnDetails"><strong>Descriptions</strong></label>
+                <select name="Description" id="income-select-description">
+                    <option> Work</option> <!--dropdown order need to style it  -->
+                    <option> Miscellaneous</option><!--dropdown order need to style it  -->
+                </select>    
+            </div>
+                  <button class="SubmitIncome" type="submit">Add Income</button>
+            </form>
+            <!-- end of user income form -->
+        </div>
+               
+
+        <section class="OutputScreen_income">  <!--maybe change the name--> <!--this is incharge of displayinig the output -->
+            <output class="ScreenOutput"></output><!--maybe change the name-->
+        </section>
+
+        
+        <div class="budget-expense-section">
+            <form class="User_expenses-container"> Expenses <br>
+                <input placeholder="Description" id="income-user-details" required></input>
+                <input placeholder="Amount" id="income-amount-details" required></input>
+             <div class="DropDown-btn-container"></div>
+               
+             <div class="dropDown_expense"> <!--idk if i shouw delete -->
+                     <label for="Description" class="incomeBtnDetails" id="userInputExpense"><strong>Descriptions</strong></label>
+                     <select name="Description" id="select-description"> 
+                     <option value="Rent"> Rent</option> 
+                     <option value="Utilities"> Utilities</option> 
+                     <option value="Car_payments"> Car payments</option> 
+                     <option value="Miscellaneous"> Miscellaneous</option> 
+                     <option value="Travel_Expense"> Travel Expense</option>  
+                     </select>  
+                    </div>
+                    <button class="SubmitExpense" type="submit">Add Expense</button>
+             </div>       
+            </form>
+            <!-- end of User expense form -->
+        </div>
+        <section class="TotalBudget-Summary">
+            <div class="total-income" id="summaryOfTotal-income">Total Income:</div>
+            <div class="total-expenses" id="summaryOfTotal-expenses">Total Expenses:</div> <!-- income ?div? -->
+            <div class="total-budget" id="summaryOfTotal-budget">Budget:</div> <!-- expense ?div?--> 
+         
+            <output class="ScreenExpense"></output>
+        </section>
+
+        <section class="chart-area">
+            <!-- insert bar chart -->
+            <!-- insert bar incoome  -->
+            <!-- insert bar expense -->
+        </section>
+    </main>
+
+<footer>
+
+</footer>    
+<script src="index.js"></script>
+</body>
+</html>
