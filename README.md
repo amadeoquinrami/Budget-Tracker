@@ -65,7 +65,7 @@ Implemented SASS
 - incorporated hover animation to make the application appealing.
 
 ---
-## Hosted site link
+## **Hosted site link**
 Test it out Here!
 
 
