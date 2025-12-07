@@ -1,5 +1,6 @@
 body {
   margin: 10px;
+  padding: 50px;
 }
 
 .bodycolor {
@@ -15,6 +16,7 @@ body {
 
 .Main_Budget-container {
   display: flex;
+  contain: content;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -56,7 +58,7 @@ body {
 .User_income-container .SubmitIncome:hover {
   background-color: #00695c;
   border: #00838f solid 2px;
-  font-size: 18px;
+  font-size: 26px;
 }
 
 .User_expenses-container {
@@ -96,7 +98,7 @@ body {
 .User_expenses-container .SubmitExpense:hover {
   background-color: #00695c;
   border: #00838f solid 2px;
-  font-size: 18px;
+  font-size: 26px;
 }
 
 .TotalBudget-Summary {
@@ -135,7 +137,9 @@ body {
 .footer-container {
   background-color: #a71797;
   margin-top: 25px;
-  color: #E8BFFB;
+  color: rgb(255, 238, 255);
+  font-size: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
   padding: 15px;
   border: 5px #5b084c solid;
 }/*# sourceMappingURL=index.css.map */

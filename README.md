@@ -13,7 +13,7 @@ Below you will see requirements I met for this Project as well as DOCUMENTATION 
 - [Display Summary](#DisplaySummary)
 - [Object-Oreintation Programming](#Object-OreintationProgramming)
 - [Styling](#Styling)
-- [Hosted site link](#hostedlink)
+- [Hosted site link](#hostedsitelink)
 ---
 ## **UserInterface**
 When the user accesses the Budget Tracker, they see two input fields along with a submit section. The submit button is a deep purple, and when the user hovers over it, its color changes.
