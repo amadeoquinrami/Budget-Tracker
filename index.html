@@ -8,11 +8,7 @@
     <link rel="stylesheet" href="index.css.map"> <!--idk why but before it was "ank" changed to "link"-->
     <title>Budget Tracker</title>
 </head>
-<!-- // PSudeo code  -->
-<!-- // 1. i need input fields for the user to input income and expenses -->
-<!-- // 2 add buttons to add income and expenses. -->
-<!-- // 3 need to display total budget , income, and expenses -->
-<!-- //  for userinterface -->
+
 <body class="bodycolor">
     <header>
         <h1 class="main_title">Budget tracker</h1>
@@ -22,66 +18,46 @@
 
         <div class="budget-income-section">
 
-            <form class="User_income-container">Income <br>
-                <input placeholder="Description" id="UserInputDescription" required></input>
-                <input placeholder="Amount" type="number" id="UserInputAmount" required></input>
-             <div class="DropDown-btn-container">
-                <label class="incomeBtnDetails"><strong>Descriptions</strong></label>
-                <select name="Description" id="income-select-description">
-                    <option> Work</option> <!--dropdown order need to style it  -->
-                    <option> Miscellaneous</option><!--dropdown order need to style it  -->
-                </select>    
-            </div>
+            <form class="User_income-container" id="income-form" novalidate>
+                <label for="UserInputDescription">Income Description</label><br>
+                    <input placeholder="Description" id="UserInputDescription" required></input>
+                    <span class="error-text" id="income-description-error"></span> 
+                    <label for="UserInputAmount">Amount</label>
+                    <input placeholder="Amount" type="number" id="UserInputAmount" required></input>
+                    <span class="error-text" id="income-amount-error"></span>
                   <button class="SubmitIncome" type="submit">Add Income</button>
             </form>
             <!-- end of user income form -->
         </div>
-               
-
-        <section class="OutputScreen_income">  <!--maybe change the name--> <!--this is incharge of displayinig the output -->
-            <output class="ScreenOutput"></output><!--maybe change the name-->
-        </section>
-
         
         <div class="budget-expense-section">
-            <form class="User_expenses-container"> Expenses <br>
-                <input placeholder="Description" id="income-user-details" required></input>
-                <input placeholder="Amount" id="income-amount-details" required></input>
-             <div class="DropDown-btn-container"></div>
-               
-             <div class="dropDown_expense"> <!--idk if i shouw delete -->
-                     <label for="Description" class="incomeBtnDetails" id="userInputExpense"><strong>Descriptions</strong></label>
-                     <select name="Description" id="select-description"> 
-                     <option value="Rent"> Rent</option> 
-                     <option value="Utilities"> Utilities</option> 
-                     <option value="Car_payments"> Car payments</option> 
-                     <option value="Miscellaneous"> Miscellaneous</option> 
-                     <option value="Travel_Expense"> Travel Expense</option>  
-                     </select>  
-                    </div>
+            <form class="User_expenses-container" id="expense-form" novalidate>
+                <label for="expense-description">Expense Description</label>
+                    <input placeholder="Description" id="expense-description" required></input>
+                    <span class="error-text" id="expense-description-error"></span>
+
+                    <input placeholder="Amount" type="number" id="expense-amount" required></input>
+                    <span class="error-text" id="expense-amount-error"></span><br>
                     <button class="SubmitExpense" type="submit">Add Expense</button>
-             </div>       
+              
             </form>
             <!-- end of User expense form -->
         </div>
         <section class="TotalBudget-Summary">
-            <div class="total-income" id="summaryOfTotal-income">Total Income:</div>
-            <div class="total-expenses" id="summaryOfTotal-expenses">Total Expenses:</div> <!-- income ?div? -->
-            <div class="total-budget" id="summaryOfTotal-budget">Budget:</div> <!-- expense ?div?--> 
-         
-            <output class="ScreenExpense"></output>
+            <div class="total-income" id="summaryOfTotal-income">Total Income: $0</div>
+            <div class="total-expenses" id="summaryOfTotal-expenses">Total Expenses:$0</div>
+            <div class="total-budget" id="summaryOfTotal-budget">Budget:$0</div> 
         </section>
 
-        <section class="chart-area">
-            <!-- insert bar chart -->
-            <!-- insert bar incoome  -->
-            <!-- insert bar expense -->
+        <section class="chart-area" >
+          <canvas class="chartinfo" id="DonutChart"></canvas>
         </section>
     </main>
 
 <footer>
-
+<div class="footer-container">&copy Amadeo Ramirez</div>
 </footer>    
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0"></script>
 <script src="index.js"></script>
 </body>
 </html>
