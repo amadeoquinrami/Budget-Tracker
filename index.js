@@ -1,5 +1,5 @@
 //  //  //  //  //  //  //  //  //   //  //
-class totalBudget {
+class totalBudget { 
     constructor () {
         this.incomeX = [];
         this.expenseY = [];
@@ -12,12 +12,11 @@ class totalBudget {
     UserExpense(description, amount) {
         this.expenseY.push({description, amount});
     }
-// now adding the braiin for the n    
+   
 getTotalIncomeX() {
     return this.incomeX.reduce((total, income) => total + income.amount, 0); //.values returns an array of the property value of an object.
 }        
 
-// noow  calculating the total expense
 getTotalExpenseY() {
     return this.expenseY.reduce((total, expense) => total + expense.amount, 0);
 }
@@ -55,7 +54,7 @@ function isValidUserInput(description, amount) {
         alert("please fill in description");
         return false;
     }
-    if (/\d/.test(description)) { //regex a way to validate and ensure noo numbers in description
+    if (/\d/.test(description)) { //regex a way to validate and ensure no numbers in "description"
         alert("Please No numbers in Descriptions, only text");
         return false;
     }
