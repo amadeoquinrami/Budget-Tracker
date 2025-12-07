@@ -51,7 +51,7 @@ function reloadUI() {
 
 //  ///     /// /// ////    //  /////   ////    /// /// //  /// //  /   /// //
 function isValidUserInput(description, amount) {
-    if (description.trim() === "") {
+    if (description.trim() === "") { // removes extra spaces
         alert("please fill in description");
         return false;
     }

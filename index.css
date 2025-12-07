@@ -96,16 +96,25 @@
 .TotalBudget-Summary {
   border: rgb(255, 238, 255) solid 10px;
   border-radius: 23px;
-  font-size: 23px;
+  font-size: 40px;
   padding: 20px 20px;
   margin: 10px;
   background-color: #E8BFFB;
   width: 500px;
 }
+.TotalBudget-Summary #summaryOfTotal-income {
+  margin: 30px;
+}
+.TotalBudget-Summary #summaryOfTotal-expenses {
+  margin: 30px;
+}
+.TotalBudget-Summary #summaryOfTotal-budget {
+  margin: 30px;
+}
 
 .chart-area {
   border: rgb(255, 238, 255) solid 10px;
-  border-radius: 10px;
+  border-radius: 23px;
   padding: 20px 20px;
   background-color: #E8BFFB;
   color: #300049;

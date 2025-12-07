@@ -129,22 +129,33 @@ $piechartY:  #EFE8D8;
     .TotalBudget-Summary {
         border: $backcolorbright solid 10px ;
         border-radius: 23px;
-        font-size: 23px;
+        font-size: 40px;
         padding: 20px 20px ;
         margin: 10px;
         background-color: $color4;
         width: 500px;
+        #summaryOfTotal-income {
+            margin: 30px;
+        }
+        #summaryOfTotal-expenses {
+            margin: 30px;
+        }
+        #summaryOfTotal-budget {
+            margin: 30px;
+        }
     }
+    
+
     // end total budget sectioin
 
     // chart area
     .chart-area {
         border: $backcolorbright solid 10px;
-        border-radius: 10px;
+        border-radius: 23px;
         padding: 20px 20px;
         background-color: $color4;
         color: $color1;
-
+        // font-size: 25px;
     }
     .chart-area {
         height: 500px;
