@@ -33,6 +33,12 @@ $piechartY:  #EFE8D8;
         font-size: 50px;
         color: $primary-color;
     }
+    .Main_Budget-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
     // maybe put in different .scss "_form container"
    .User_income-container {
     font-size: 25px;
@@ -41,6 +47,7 @@ $piechartY:  #EFE8D8;
     padding: 20px 20px;
     background-color: $color4;
     margin: 10px;
+    width: 500px;
  #UserInputDescription {
     padding: 10px;
     margin: 8px;
@@ -84,6 +91,7 @@ $piechartY:  #EFE8D8;
     font-size: 25px;
     background-color: $color4;
     margin: 10px;
+    width: 500px;
     #expense-description {
     padding: 10px;
     margin: 8px;
@@ -125,6 +133,7 @@ $piechartY:  #EFE8D8;
         padding: 20px 20px ;
         margin: 10px;
         background-color: $color4;
+        width: 500px;
     }
     // end total budget sectioin
 
@@ -136,6 +145,11 @@ $piechartY:  #EFE8D8;
         background-color: $color4;
         color: $color1;
 
+    }
+    .chart-area {
+        height: 500px;
+        width: 500px;
+        margin: 10px;
     }
     .footer-container {
         background-color: $color3;

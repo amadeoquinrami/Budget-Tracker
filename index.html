@@ -19,12 +19,12 @@
         <div class="budget-income-section">
 
             <form class="User_income-container" id="income-form" novalidate>
-                <label for="UserInputDescription">Income Description</label><br>
+                <label for="UserInputDescription"><strong>Income</strong> </label><br>
                     <input placeholder="Description" id="UserInputDescription" required></input>
                     <span class="error-text" id="income-description-error"></span> 
-                    <label for="UserInputAmount">Amount</label>
+                    <!-- <label for="UserInputAmount">Amount</label> -->
                     <input placeholder="Amount" type="number" id="UserInputAmount" required></input>
-                    <span class="error-text" id="income-amount-error"></span>
+                    <span class="error-text" id="income-amount-error"></span><br>
                   <button class="SubmitIncome" type="submit">Add Income</button>
             </form>
             <!-- end of user income form -->
@@ -32,10 +32,10 @@
         
         <div class="budget-expense-section">
             <form class="User_expenses-container" id="expense-form" novalidate>
-                <label for="expense-description">Expense Description</label>
+                <label for="expense-description"><strong>Expenses</strong></label><br>
                     <input placeholder="Description" id="expense-description" required></input>
                     <span class="error-text" id="expense-description-error"></span>
-
+                    <!-- <label for="UserInputAmount">Amount</label> -->
                     <input placeholder="Amount" type="number" id="expense-amount" required></input>
                     <span class="error-text" id="expense-amount-error"></span><br>
                     <button class="SubmitExpense" type="submit">Add Expense</button>
